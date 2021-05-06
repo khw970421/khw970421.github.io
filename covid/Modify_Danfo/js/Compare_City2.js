@@ -7,8 +7,24 @@ let button = document.getElementById('but');
 let cityMember=[];
 
 const addEventListener1 = ()=>{
-  cityTitle.insertAdjacentHTML('beforeend',`<button type="button" class="m-1 btn btn-primary">${cityTag.value}</button>`);
-  cityMember.push(cityTag.value)
+  let isNotDuplicate=true;
+  cityTitle.childNodes.forEach(Dom=>{
+    if(Dom.innerHTML ===`${cityTag.value}`) {
+      alert('이미 존재하는 도시입니다');
+      isNotDuplicate = false;
+    }
+  })
+
+  if(isNotDuplicate) {
+    cityTitle.insertAdjacentHTML('beforeend', `<button type="button" id="${cityTag.value}" class="m-1 btn btn-primary">${cityTag.value}</button>`);
+    document.querySelector(`#${cityTag.value}`).addEventListener('click', (e) => {
+      if (confirm('삭제하시겠습니까?')) {
+        e.path[0].remove();
+        cityMember.splice(cityMember.indexOf(e.path[0].innerHTML), 1);
+      }
+    })
+    cityMember.push(cityTag.value)
+  }
 }
 
 addButton.addEventListener('click',addEventListener1);

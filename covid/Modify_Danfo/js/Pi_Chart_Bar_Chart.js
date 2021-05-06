@@ -71,8 +71,7 @@ Bar_Button.addEventListener('click',function(){
 
         let df = new dfd.DataFrame(
           {
-            Price: data.body__items__item__incDec.data.slice(0,incDec_Length_Except_Sum),   //표의 맨 아래 합계를 제거한 내용들
-            Location : data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum),
+            '확진자수' : data.body__items__item__incDec.data.slice(0,incDec_Length_Except_Sum),   //표의 맨 아래 합계를 제거한 내용들
             Type: data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum)
           },
           { index: data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum)}

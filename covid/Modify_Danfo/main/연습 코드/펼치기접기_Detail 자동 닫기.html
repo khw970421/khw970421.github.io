@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <details>
+  <summary>1</summary>Demo 1
+</details>
+
+<details>
+  <summary>2</summary>Demo 2
+</details>
+
+<details>
+  <summary>3</summary>Demo 3
+</details>
+    <script type="text/javascript">
+	        // Fetch all the details element.
+	const details = document.querySelectorAll("details");
+
+	// Add the onclick listeners.
+	details.forEach((targetDetail) => {
+	  targetDetail.addEventListener("click", () => {
+	    // Close all the details that are not targetDetail.
+	    details.forEach((detail) => {
+	      if (detail !== targetDetail) {
+	        detail.removeAttribute("open");
+	      }
+	    });
+	  });
+	});
+    </script>
+</body>
+</html>

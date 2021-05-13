@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Composer -->
+    <!-- Source: https://www.jssor.com/tlwns5598/faster.slider/=edit -->
+    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:20,d:980,x:11,e:{x:6}}],
+              [{b:-1,d:1,x:100,p:{x:{d:1,dO:9}}},{b:200,d:760,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,x:200,p:{x:{d:1,dO:9}}},{b:200,d:760,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:20,d:980,x:190,e:{x:6}}],
+              [{b:-1,d:1,x:100,p:{x:{d:1,dO:9}}},{b:200,d:800,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,x:200,p:{x:{d:1,dO:9}}},{b:200,d:800,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:40,d:960,x:40,e:{x:6}}],
+              [{b:-1,d:1,x:100,p:{x:{d:1,dO:9}}},{b:200,d:800,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,x:200,p:{x:{d:1,dO:9}}},{b:200,d:800,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:20,d:980,x:148,e:{x:6}}],
+              [{b:-1,d:1,x:100,p:{x:{d:1,dO:9}}},{b:200,d:800,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,x:200,p:{x:{d:1,dO:9}}},{b:200,d:800,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:20,d:980,x:22,e:{x:6}}],
+              [{b:-1,d:1,x:100,p:{x:{d:1,dO:9}}},{b:200,d:800,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,x:200,p:{x:{d:1,dO:9}}},{b:200,d:800,x:0,e:{x:6},p:{x:{dl:0.1}}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 16,
+                $SpacingY: 16
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 031 css*/
+        .jssorb031 {position:absolute;}
+        .jssorb031 .i {position:absolute;cursor:pointer;}
+        .jssorb031 .i .b {fill:#000;fill-opacity:0.6;stroke:#fff;stroke-width:1600;stroke-miterlimit:10;stroke-opacity:0.8;}
+        .jssorb031 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#000;stroke-opacity:1;}
+        .jssorb031 .iav .b {fill:#fff;stroke:#000;stroke-width:1600;fill-opacity:.6;}
+        .jssorb031 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;"><a href="http://ncov.mohw.go.kr/index.jsp" rel="nofollow" data-fillmode="1" style="background-color:#000000;"><img data-u="image" style="opacity:0.8;" src="http://www.jbnews.com/news/photo/202009/1306569_1102133_5616.jpg" /><div data-ts="flat" data-p="313" style="left:396px;top:269px;width:550px;height:76px;position:absolute;overflow:hidden;"><div data-to="50% 50%" data-ts="preserve-3d" data-t="0" style="left:561px;top:2px;width:455px;height:90px;position:absolute;overflow:hidden;background-image:linear-gradient(135deg,rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0) 100%);"><div data-to="50% 50%" data-ts="preserve-3d" data-arr="1" style="left:16px;top:14px;width:332px;height:20px;position:absolute;color:#edf1f2;font-size:18px;font-weight:700;line-height:1.2;letter-spacing:0.1em;">국내 코로나 동향은<br /></div><div data-to="50% 50%" data-ts="preserve-3d" data-arr="2" style="left:14px;top:40px;width:600px;height:30px;position:absolute;color:#edf1f2;font-size:24px;line-height:1.2;letter-spacing:0.05em;"><font color="#e04338"><b>중앙방역대책본부</b></font>에서 확인하세요<br /></div></div></div></a><a href="https://www.cdc.gov/" rel="nofollow" data-fillmode="5" style="background-color:#000000;"><img data-u="image" style="opacity:0.8;" src="https://dalkora.com/data/file/town/1287343406_A9jp0wbg_24637bef37762fc1bf8d327d24aaff089d4f41ca.jpg" /><div data-ts="flat" data-p="345" style="left:192px;top:257px;width:599px;height:90px;position:absolute;overflow:hidden;"><div data-to="50% 50%" data-ts="preserve-3d" data-t="3" style="left:740px;top:13px;width:387px;height:70px;position:absolute;overflow:hidden;background-image:linear-gradient(135deg,rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0) 100%);"><div data-to="50% 50%" data-ts="preserve-3d" data-arr="4" style="left:20px;top:18px;width:332px;height:20px;position:absolute;color:#edf1f2;font-size:18px;font-weight:700;line-height:1.2;letter-spacing:0.1em;">미국 코로나 동향은</div><div data-to="50% 50%" data-ts="preserve-3d" data-arr="5" style="left:19px;top:36px;width:600px;height:30px;position:absolute;color:#edf1f2;font-size:24px;line-height:1.2;letter-spacing:0.05em;"><span style="font-weight:900;color:#e04338;">미국 CDC 센터</span>에서 확인하세요</div></div></div></a><a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6%20" rel="nofollow" data-fillmode="1" style="background-color:#000000;"><img data-u="image" style="opacity:0.8;" src="https://apply.jhu.edu/wp-content/uploads/2017/04/JHU-gate_small.jpg" /><div data-ts="flat" data-p="313" style="left:316px;top:279px;width:550px;height:75px;position:absolute;overflow:hidden;"><div data-to="50% 50%" data-ts="preserve-3d" data-t="6" style="left:590px;top:-4px;width:614px;height:75px;position:absolute;overflow:hidden;background-image:linear-gradient(135deg,rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0) 100%);"><div data-to="50% 50%" data-ts="preserve-3d" data-arr="7" style="left:20px;top:18px;width:332px;height:20px;position:absolute;color:#edf1f2;font-size:16px;font-weight:700;line-height:1.2;letter-spacing:0.1em;">세계 확진자 현황은</div><div data-to="50% 50%" data-ts="preserve-3d" data-arr="8" style="left:14px;top:40px;width:600px;height:30px;position:absolute;color:#edf1f2;font-size:24px;line-height:1.2;letter-spacing:0.05em;"><span style="font-weight:900;color:#e04338;">존스홉킨스 CSSE</span>에서 확인하세요<br /></div></div></div></a><a href="https://www.cdc.gov/" rel="nofollow" data-fillmode="1" style="background-color:#000000;"><img data-u="image" style="opacity:0.8;" src="https://d.newsweek.com/en/full/1737197/un-logo.jpg?w=1600&h=1200&q=88&f=425b1952afe5ba6ab3cc07cde189ba8c" /><div data-ts="flat" data-p="365" style="left:145px;top:254px;width:640px;height:90px;position:absolute;overflow:hidden;"><div data-to="50% 50%" data-ts="preserve-3d" data-t="9" style="left:698px;top:23px;width:464px;height:90px;position:absolute;overflow:hidden;background-image:linear-gradient(135deg,rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0) 100%);"><div data-to="50% 50%" data-ts="preserve-3d" data-arr="10" style="left:20px;top:18px;width:332px;height:20px;position:absolute;color:#edf1f2;font-size:16px;font-weight:700;line-height:1.2;letter-spacing:0.1em;">UN&nbsp; 코로나 정보는<br /></div><div data-to="50% 50%" data-ts="preserve-3d" data-arr="11" style="left:19px;top:36px;width:600px;height:30px;position:absolute;color:#edf1f2;font-size:24px;line-height:1.2;letter-spacing:0.05em;"><span style="font-weight:900;color:#e04338;">WHO&nbsp;</span>세계보건기구에서 확인하세요</div></div></div></a><a href="http://www.0404.go.kr/m/dev/main.do" rel="nofollow" data-fillmode="1" style="background-color:#000000;"><img data-u="image" style="opacity:0.8;" src="img/ie002503176_pht.jpg" /><div data-ts="flat" data-p="265" style="left:331px;top:274px;width:454px;height:76px;position:absolute;overflow:hidden;"><div data-to="50% 50%" data-ts="preserve-3d" data-t="12" style="left:572px;top:2px;width:540px;height:77px;position:absolute;overflow:hidden;background-image:linear-gradient(135deg,rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0) 100%);"><div data-to="50% 50%" data-ts="preserve-3d" data-arr="13" style="left:20px;top:18px;width:332px;height:20px;position:absolute;color:#edf1f2;font-size:16px;font-weight:700;line-height:1.2;letter-spacing:0.1em;">출국을 준비하는 분들은</div><div data-to="50% 50%" data-ts="preserve-3d" data-arr="14" style="left:14px;top:40px;width:600px;height:30px;position:absolute;color:#edf1f2;font-size:24px;line-height:1.2;letter-spacing:0.05em;"><span style="font-weight:900;color:#e04338;">외교부</span>&nbsp;해외여행안내를 받아 주세요<br /></div></div></div></a>
+        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:13px;height:13px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+</body>
+</html>

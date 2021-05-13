@@ -1,0 +1,286 @@
+<!DOCTYPE html> 
+<html lang="ko-KR">
+<head> 
+	<meta charset="utf-8"/> 
+	<meta name="description" content="Corona Information Site"/> 
+	<meta name="author" content="tlwns5598@gmail.com" /> 
+	<title>Corona Core</title> 
+	<link rel="stylesheet" href="../style.css">
+	
+    <!-- Footer 부분 html 파일로 포함하기 위한 script-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">   
+        $(document).ready( function() {
+        $("#footer").load("../footer.html");
+        $("#header").load("../header.html");
+        });
+    </script>
+    <!-- 위치 : #footer 자리 -->
+    <!-- 내용 : "footer.html" 내용 -->
+
+
+<style>
+	details {
+	  font: 14px "KoPub Batang", Calibri, sans-serif;
+	}
+
+	details > summary {
+	  padding: 2px 6px;
+	  width: 53.5em;
+	  background-color: #424242;
+	  box-shadow: 3px 3px 4px gray;
+	  cursor: pointer;
+	  color:white;
+	}
+
+	details > summary > div {
+	  font-weight: 400;
+	  background-color: #f5f5f5;
+	  color:black;
+	  padding:2px;
+	}
+
+	p{
+		color:#3D3D3D;
+		line-height: 170%;
+	}
+	.black_bold{
+		font-family:'KoPub Batang';
+		font-weight: 600;
+		color:blue;
+	}
+	.bold{
+		font-family:'KoPub Batang';
+		font-weight: 600;
+		color:red;
+	}
+
+	.float{
+		float:right;
+	}
+	.contents2{ 
+	padding: 10px;
+	min-height : 490px;
+	border : 1px solid gray;
+	}
+
+</style>
+</head>
+<body id="zoom">
+
+    <!-- 페이지 원클릭 상단이동 버튼-->
+    <a  style="display:scroll; position:fixed; left : 30px; bottom:10px;" href="#"><img src="../../02_이미지/up_dark.png" style="width:40px; "></a>
+
+	<a href="../index.html"style="text-decoration:none;color:black;">
+	<h2 class="main_title"> Corona Core </a></h2><br>
+<div class="mid">
+	<nav id="topMenu" > 
+		<ul> 
+			<li class="topMenuLi"> <a class="menuLink" >이용 안내</a> 
+				<ul class="submenu"> 
+					<li><a href="../submenu_1/01_notice.html" class="submenuLink">공지사항</a></li> 
+					<li><a href="../submenu_1/02_about_us.html" class="submenuLink">About Us</a></li> 
+				</ul>
+			</li> 
+			<li>|</li> <!-- 메뉴 사이에 그냥 바 모양 텍스트로 단락 구분한 거  -->
+			<li class="topMenuLi"> <a class="menuLink" >통계 정보</a> 
+				<ul class="submenu"> 
+					<li><a href="../submenu_2/graph1.html" class="submenuLink">국내 누적 확진자 통계</a></li> 
+					<li><a href="../submenu_2/graph2.html" class="submenuLink">지역별 확진자 증가 추세</a></li> 
+					<li><a href="../submenu_2/graph3.html" class="submenuLink">지역별 확진자 비교 통계</a></li> 
+					<li><a href="../submenu_2/graph4.html" class="submenuLink">특정 수치 초과일 조회</a></li>
+					<li><a href="../submenu_2/graph5.html" class="submenuLink">지역별 확진자 숫자 조회</a></li>
+				</ul> 
+			</li> 
+			<li>|</li>
+			<li class="topMenuLi"> <a class="menuLink" >방역 정보</a>
+				<ul class="submenu"> 
+					<li><a href="../submenu_3/01_corona19.html" class="submenuLink">코로나 19</a></li> 
+					<li><a href="../submenu_3/02_vaccine.html" class="submenuLink">코로나 백신</a></li> 
+					<li><a href="../submenu_3/03_person_movement.html" class="submenuLink">확진자 동선</a></li> <!--하이퍼링크 버튼, 지자체별-->
+					<li><a href="../submenu_3/04_prevention.html" class="submenuLink">예방 행동 수칙</a></li> <!--국민예방수칙, 긴급연락처(ex선별진료소, 관할보건소)-->
+				</ul> 
+			</li> 
+			<li>|</li> 
+			<li class="topMenuLi"> <a class="menuLink">정부 정책</a>
+				<ul class="submenu"> 
+					<li><a href="../submenu_4/01_policy.html" class="submenuLink">사회적 거리두기 정책</a></li> <!--단계별실행방안-->
+					<li><a href="../submenu_4/02_stage.html" class="submenuLink">지역별 거리두기 단계</a></li> 
+					<li><a href="../submenu_4/03_mask.html" class="submenuLink">마스크 착용 의무화 범위</a></li> 
+				</ul> 
+			</li> 
+		</ul> 
+	</nav>
+	<br><hr>
+    
+    <!-- 경로 박스 -->
+    <div class="stage">
+    	<h3 style="text-align:left" class="font1"> 방역 정보 > 코로나 백신 </h3>
+	</div>
+    <hr>
+
+	<!-- 컨텐츠 박스 -->
+	<div class="contents" style="background-color:#eeeeee">
+    	<h3 style="text-align:center"> 코로나 백신 </h3><br>
+		<div class="contents2" style="background-color:white" >
+    		<br><h3 class="center"> 예방 접종 </h3><br>
+	    		<div style="text-align: center">
+				<iframe width="565" height="318" src="https://www.youtube.com/embed/APOt56usrt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div><br><br>
+				<p style="line-height: 1.5">
+				&emsp;- 예방접종 전후에 알아야 할 정보와 예방접종 후 이상반응에 대한 안내사항입니다<br>
+				&emsp;- 예방접종은 건강한 상태에서 맞는 것이 중요합니다!<br>
+				&emsp;- 예방접종 후에는 접종 기관에서 15분에서 30분 간 머물러 이상반응을 확인하세요!<br>
+				</p>
+		</div>
+		<br>
+		<div class="contents2" style="background-color:white" >
+			<br><h3 class="center"> 백신 상식 </h3><br>
+			<!-- 01. 백신과 면역 상식 -->
+			<hr>
+	    	<details><summary> 1_백신의 원리 <br><br><div><br>인체가 질병과 맞서는 방법과 COVID-19 백신의 원리를 이해합니다.<br><br></div></summary><br>
+			<h3 class="center"> 백신의 원리 </h3><br>
+			<p>  COVID-19 유발 바이러스와 같은 세균은 우리 몸에 들어와 우리를 공격하고 증식합니다. '감염'이라고 불리우는 이 침입 과정은 질병을 유발합니다. 우리 면역 체계는 감염과 싸우기 위해 여러 도구를 사용합니다. 혈액에는 조직과 기관에 산소를 운반하는 적혈구, 그리고 감염원과 싸우는 백혈구, 즉 면역 세포가 있습니다. 다양한 유형의 백혈구가 다양한 방식으로 감염과 싸웁니다.</p>
+			<p>대식세포는 세균 또는 죽거나 죽어가는 세포를 먹고 소화하는 백혈구입니다. 대식세포는 '항원'이라고 하는 침입 세균의 일부를 남겨둡니다. 신체는 항원을 위험한 것이라고 판단하고 항체를 자극하여 항원을 공격합니다.</p>
+			<p>B 림프구는 방어 백혈구입니다. B 림프구는 대식세포가 남긴 바이러스 조각을 공격하는 항체를 생산합니다.</p>
+
+			<p>T 림프구는 또 다른 유형의 방어 백혈구로, 이미 감염된 체내 세포를 공격합니다.</p>
+			<p>사람이 COVID-19 유발 바이러스에 처음 감염되면 몸이 감염을 이기는 데 필요한 모든 세균 퇴치 도구를 만들고 사용하는 데 며칠 또는 몇 주가 걸립니다. 감염 후 환자의 면역 체계는 그 질병으로부터 신체를 보호하는 방법에 대해 배운 내용을 기억합니다.</p>
+
+
+			<p>신체는 '기억세포'라고 하는 T 림프구를 몇 개 보유하면서, 신체에 같은 바이러스가 다시 들어오면 빠르게 조치를 취합니다. 익숙한 항원이 감지되면, B 림프구는 항체를 생성하여 공격합니다. 전문가들은 이 기억세포가 COVID-19 유발 바이러스로부터 사람을 얼마나 오랫동안 보호하는지 알기 위해 연구하고 있습니다.</p>
+			<p>COVID-19 백신은 우리가 감염되지 않은 상태에서도 COVID-19 유발 바이러스에 대한 면역력을 갖추도록 도와줍니다. 다른 유형의 백신은 다른 방식으로 면역력을 만들기도 하지만, 모든 유형의 백신은 신체가 미래에 바이러스와 싸우는 방법을 기억할 B 림프구뿐만 아니라 '기억' 세포인 T 림프구도 제공합니다.</p>
+			<p>일반적으로 백신 접종 후 신체에서 T 림프구와 B 림프구를 생성하는 데에는 몇 주가 걸립니다. 따라서 백신 접종 직전이나 직후에 COVID-19 유발 바이러스 감염되면 백신 보호 기능이 충분이 생기지 않았기 때문에 질병에 걸릴 수도 있습니다.</p>
+			<p>때때로 예방 접종 후 면역력이 생기는 과정에서 발열과 같은 증상이 나타날 수 있습니다. 이러한 증상은 정상이며 신체가 면역력을 구축하고 있다는 신호입니다.</p>
+			</details>
+
+
+
+			<!-- 01. 백신 유형 -->
+			<br>
+			<details><summary> 2_백신의 유형<br><br><div><br>백신의 유형별 작동 방식입니다.<br><br></div></summary><br>
+			<br><h3 class="center">백신의 유형</h3><br>
+			
+			<h3>a. mRNA 유형</h3>
+			<p>mRNA 백신에는 바이러스 고유의 무해 단백질 생성법에 대한 지침을 세포에 제공하는 COVID-19 유발 바이러스 물질이 포함되어 있습니다. 우리 세포가 이 단백질을 복제하고 나면, 이들이 백신에서 유전 물질을 파괴합니다. 우리 몸은 그 단백질이 존재해서는 안된다는 것을 인식하고 향후 감염될 경우 COVID-19 유발 바이러스와 싸우는 방법을 기억하는 T 림프구와 B 림프구를 만듭니다.
+			<!-- https://korean.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mRNA.html --></p>
+
+			<h3>b. 단백질 서브유닛 유형</h3>
+			<p>단백질 서브유닛 백신에는 COVID-19 유발 바이러스의 전체 세균이 아닌, 무해한 조각(단백질)이 들어있습니다. 백신을 접종하여 이 단백질 조각이 몸에 들어오면, 면역 체계는 우리 몸에 속한 단백질이 아니라는 것을 인식하고 T 림프구와 항체를 만들게 되며, COVID-19 유발 바이러스와 싸우는 방법을 기억하고 향후 감염에 대비할 수 있습니다.</p>
+
+			<h3>c. 벡터 유형</h3>
+			<p>벡터 백신에는 COVID-19 유발 바이러스와는 다른, 바이러스의 변형본이 들어 있습니다. 변형 바이러스 껍질 속에는 COVID-19를 일으키는 바이러스의 물질이 들어 있습니다. 이것을 '바이러스 벡터'라고 합니다. 바이러스 벡터가 세포 내부에 들어가면 COVID-19 유발 바이러스에 해당하는 특별 단백질을 만들도록 유전 물질에 지시합니다. 이 지침을 사용하여 세포는 해당 단백질의 사본을 만듭니다. 이는 나중에 감염될 경우 그 바이러스와 싸우는 방법을 기억할 T 림프구와 B 림프구를 만들도록 유도합니다.
+			<!-- https://korean.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/viralvector.html --></p>
+			<hr><br>
+			<h3 class="center"> 접종 횟수</h3>
+			<p>일부 COVID-19 백신은 한 번 이상 접종 필요</p>
+			<p>일부 COVID-19 백신은 두 번 접종해야 백신 접종을 완전히 완료할 수 있습니다.</p>
+			<p>2회의 백신 접종이 필요한 COVID-19 백신을 맞으면, 2차 접종을 받은 뒤 2주 후에 백신의 효력이 완전히 나타나는 것으로 간주합니다. 화이자-바이오앤텍 과 모더나 COVID-19 백신은 2회 접종이 필요합니다.</p>
+			<p>단 1회만 백신 접종이 필요한 COVID-19 백신을 맞으면, 접종을 받은 뒤 2주 후에 백신의 효력이 완전히 나타나는 것으로 간주합니다. 존슨앤존슨 얀센 COVID-{[# 1]} 백신은 한 번만 접종하면 됩니다.</p>
+			<p>주사를 맞은 지 2주가 지나지 않았거나 2차 주사를 맞아야 한다면 보호 기능이 완전하지 않습니다. 백신 접종을 완전히 완료할 때까지(최종 접종으로부터 2주 후) 모든 예방 조치를 계속 지켜야 합니다.</p>
+			</details>
+
+			<!-- 3 백신 종류 -->
+			<br>
+			<details><summary> 3_백신의 종류 <br><br><div><br>백신의 종류별 명칭 & 접종 방법입니다.<br><br></div></summary><br>
+			<br><h3 class="center">백신의 종류</h3><br>
+			<div class="float">
+				<img src="../../02_이미지/백신_화이자.jpg" alt="화이자" width="180px" height="180px">
+			</div>
+			<h4>(1) 화이자</h4>
+			
+			<p>
+			이름: BNT162b2<br>
+			제조사: Pfizer, Inc., 및 BioNTech<br>
+			백신 유형: mRNA<br>
+			접종횟수: 2회 접종, 21일 간격으로 접종<br>
+			투여 방법: 상완 근육에 주사<br><br><br>
+
+				<!-- https://korean.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html -->
+			</p>
+			<br>
+			<hr><br>
+			<div class="float">
+				<img src="../../02_이미지/백신_얀센.jpg" alt="얀센" width="180px" height="180px">
+			</div>
+			<h4>(2) 존슨 앤 존슨 얀센</h4><p>
+			제품명: JNJ-78436735<br>
+			제조사: 존슨앤존슨 얀센제약<br>
+			백신 유형: 바이러스 벡터<br>
+			접종 횟수: 1회<br>
+			투여 방법: 상완 근육에 주사<br><br><br>
+
+			<!-- https://korean.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html -->
+			</p>
+			<br>
+			
+			
+			<hr><br>
+			<div class="float">
+				<img src="../../02_이미지/백신_모더나.jpg" alt="모더나" width="180px" height="180px">
+			</div>
+			<h4>(3) 모더나</h4><p>
+			제품명: mRNA-1273<br>
+			제조사: ModernaTX, Inc.<br>
+			백신 유형: mRNA<br>
+			접종 횟수: 한 달(28일) 간격으로 2회 접종<br>
+			투여 방법: 상완 근육에 주사<br><br><br>
+
+				<!-- https://korean.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html -->
+			</p><br>
+			
+			<hr><br>
+			<div class="float">
+				<img src="../../02_이미지/백신_아스트라제네카.jpg" alt="아스트라제네카" width="180px" height="180px">
+			</div>
+			<h4>(4) 아스트라제네카</h4>
+			<div style="width: 560px">
+				<p> 
+					제품명 : 한국아스트라제네카코비드-19백신주(사스코로나바이러스-2 바이러스벡터백신)<br>
+					성상	무색 내지 미황색의, 투명하거나 약간 불투명한 용액이 무색 투명한 바이알에 충전된 주사제로 육안으로 관찰 시 입자가 보이지 않는다.<br>
+				</p>
+			</div>
+			<p>
+			업체명 : 한국아스트라제네카(주)<br>
+			위탁제조업체 : 에스케이바이오사이언스(주)<br>
+			전문/일반 : 전문의약품<br>
+			허가일 : 2021-02-10<br>
+			품목기준코드	: 202101249<br>
+			표준코드 :8806507011301, 8806507011318, 8806507011325 <br><br>
+
+			1. 투여용량 (18세↑) <br>
+			- 0.5mL씩 / 4~12주 간격 / 총 2회
+			<br><br>
+			2. 투여방법<br>
+			- 근육주사로 투여하며, 가급적 위팔 삼각근에 투여.
+			- 혈관내, 피하 또는 피내 주사해서는 안 된다.<br>
+			- 동일한 주사기로 다른 백신 또는 약물과 혼합해서 사용해서는 안 된다.<br>
+			- 투여 관련 주의사항은 사용상의 주의사항, ‘10. 적용상의 주의사항’을 참조한다.<br>
+			<!-- https://ko.wikipedia.org/wiki/%EC%95%84%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%A0%9C%EB%84%A4%EC%B9%B4 -->
+			</p><br><br><br>
+			</details>
+		</div>
+	</div> <!-- contents  종료 -->
+</div> <!-- mid  종료 -->
+
+<!--다른 summary를 열었을 때 기존에 열었던 summary 닫기-->
+<script type="text/javascript">
+	        // Fetch all the details element.
+	const details = document.querySelectorAll("details");
+
+	// Add the onclick listeners.
+	details.forEach((targetDetail) => {
+	  targetDetail.addEventListener("click", () => {
+	    // Close all the details that are not targetDetail.
+	    details.forEach((detail) => {
+	      if (detail !== targetDetail) {
+	        detail.removeAttribute("open");
+	      }
+	    });
+	  });
+	});
+    </script>
+    <div id="footer"></div>
+</body> 
+</html>
+

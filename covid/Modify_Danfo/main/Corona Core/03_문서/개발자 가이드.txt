@@ -1,0 +1,19 @@
+
+
+---------
+
+<폴더&파일 설명>
+
+- 폴더 -
+iframe : IFRAME 태그 연습 사용하는 폴더
+submenu : 이용 안내
+Text_Folder : 방역 정보
+Text_Folder2 : 정부 정책
+graph_menu : 
+
+- 파일 - 
+mask.jpg :  마스크 사용 안내 이미지
+property.jpg : 공공 API 사용 시 이미지 추가하기
+
+<팁 - 깃헙 이용한 웹 퍼블리시>
+레포지터리 - 세팅 - 레포지터리 네임 - asfd.io - 브랜치 : 메인

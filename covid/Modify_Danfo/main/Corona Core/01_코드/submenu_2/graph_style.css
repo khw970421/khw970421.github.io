@@ -1,0 +1,14 @@
+
+#outer_contents{
+	background-color:#eeeeee;
+	border:1px solid;
+}
+#inside_contents{
+	background-color:#474747;
+	color:white;
+	border:1px solid;
+}
+#graph_iframe{
+	background-color:white;
+	border:1px solid;
+}

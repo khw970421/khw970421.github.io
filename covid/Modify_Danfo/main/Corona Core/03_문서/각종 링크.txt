@@ -1,0 +1,22 @@
+
+**링크**
+
+// 공유 버튼 
+https://velog.io/@khw970421/Addthis
+
+// 카카오 에드핏
+https://velog.io/@khw970421/Kakao-adfit
+
+// 그래프 링크
+ https://khw970421.github.io/covid/Modify_Danfo/Compare_City2.html
+ https://khw970421.github.io/covid/Modify_Danfo/Daily_Increase_Day.html
+ https://khw970421.github.io/covid/Modify_Danfo/Daily_Total_Increase_Modify2.html
+ https://khw970421.github.io/covid/Modify_Danfo/Pi_Chart_Bar_Chart.html
+ https://khw970421.github.io/covid/d3_koreaMap-master/korea.html
+ https://github.com/khw970421/khw970421.github.io/tree/master/covid/Modify_Danfo 위의 5개 설명내용
+
+ // 공공데이터 이용하기 (pi chart modify)
+ https://velog.io/@khw970421/%EA%B3%B5%EA%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%9D%B4%EC%9A%A9%ED%95%98%EA%B8%B0-14-PiChartModify-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EB%B2%84%ED%8A%BC-%EA%B5%AC%ED%98%84
+
+ //오픈 API
+ http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19SidoInfStateJson?serviceKey=u%2BXsTVV1nl13bsl5mxFNCaZ0o48loSbVj4pQoNm2xFONwLswAgYcNrabZ9jBp7mIdKQZSgYV7NBAjOyHH6cr%2Fg%3D%3D&startCreateDt=20210326&endCreateDt=20210326

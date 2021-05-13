@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html lang="ko-KR">
+<head> 
+	<meta charset="utf-8"/> 
+	<meta name="description" content="Corona Information Site"/> 
+	<meta name="author" content="tlwns5598@gmail.com" /> 
+	<title>Corona Core</title> 
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="방역.css">
+
+    <!-- Footer 부분 html 파일로 포함하기 위한 script-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">   
+        $(document).ready( function() {
+        $("#footer").load("../footer.html");
+        $("#header").load("../header.html");
+        });
+    </script>
+    <!-- 위치 : #footer 자리 -->
+    <!-- 내용 : "footer.html" 내용 -->
+
+</head>
+<body id="zoom">
+
+	
+    <!-- 페이지 원클릭 상단이동 버튼-->
+    <a  style="display:scroll; position:fixed; left : 30px; bottom:10px;" href="#"><img src="../../02_이미지/up_dark.png" style="width:40px; "></a>
+
+	<a href="../index.html"style="text-decoration:none;color:black;">
+	<h2 class="main_title"> Corona Core </a></h2><br>
+<div class="mid">
+	<nav id="topMenu" > 
+		<ul> 
+			<li class="topMenuLi"> <a class="menuLink" >이용 안내</a> 
+				<ul class="submenu"> 
+					<li><a href="../submenu_1/01_notice.html" class="submenuLink">공지사항</a></li> 
+					<li><a href="../submenu_1/02_about_us.html" class="submenuLink">About Us</a></li> 
+				</ul>
+			</li> 
+			<li>|</li> <!-- 메뉴 사이에 그냥 바 모양 텍스트로 단락 구분한 거  -->
+			<li class="topMenuLi"> <a class="menuLink" >통계 정보</a> 
+				<ul class="submenu"> 
+					<li><a href="../submenu_2/graph1.html" class="submenuLink">국내 누적 확진자 통계</a></li> 
+					<li><a href="../submenu_2/graph2.html" class="submenuLink">지역별 확진자 증가 추세</a></li> 
+					<li><a href="../submenu_2/graph3.html" class="submenuLink">지역별 확진자 비교 통계</a></li> 
+					<li><a href="../submenu_2/graph4.html" class="submenuLink">특정 수치 초과일 조회</a></li>
+					<li><a href="../submenu_2/graph5.html" class="submenuLink">지역별 확진자 숫자 조회</a></li>
+				</ul> 
+			</li> 
+			<li>|</li>
+			<li class="topMenuLi"> <a class="menuLink" >방역 정보</a>
+				<ul class="submenu"> 
+					<li><a href="../submenu_3/01_corona19.html" class="submenuLink">코로나 19</a></li> 
+					<li><a href="../submenu_3/02_vaccine.html" class="submenuLink">코로나 백신</a></li> 
+					<li><a href="../submenu_3/03_person_movement.html" class="submenuLink">확진자 동선</a></li> <!--하이퍼링크 버튼, 지자체별-->
+					<li><a href="../submenu_3/04_prevention.html" class="submenuLink">예방 행동 수칙</a></li> <!--국민예방수칙, 긴급연락처(ex선별진료소, 관할보건소)-->
+				</ul> 
+			</li> 
+			<li>|</li> 
+			<li class="topMenuLi"> <a class="menuLink">정부 정책</a>
+				<ul class="submenu"> 
+					<li><a href="../submenu_4/01_policy.html" class="submenuLink">사회적 거리두기 정책</a></li> <!--단계별실행방안-->
+					<li><a href="../submenu_4/02_stage.html" class="submenuLink">지역별 거리두기 단계</a></li> 
+					<li><a href="../submenu_4/03_mask.html" class="submenuLink">마스크 착용 의무화 범위</a></li> 
+				</ul> 
+			</li> 
+		</ul> 
+	</nav>
+	<br><hr>
+    
+    <!-- 경로 박스 -->
+    <div class="stage">
+    	<h3 style="text-align:left" class="font1"> 방역정보 > 코로나 19 </h3>
+	</div>
+    <hr>
+
+	<!-- 컨텐츠 박스 -->
+	<div id="outer_contents"><br>
+    	<h3 style="text-align:center"> 코로나 19 </h3><br>
+		<div id=inside_contents>
+    	<br><h3 style="text-align:center"> 바이러스 개요</h3><br>
+
+			<div class="mid_box"><br><b>증상</b><br>
+			<div id="inside_contents">
+			<b>주요증상 및 징후</b><br>
+			- 임상 증상 : 무증상, 경증, 중등증, 중증까지 다양<br>
+			- 주요 증상 : 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실<br>
+			- 그외 증상 : 피로, 식욕감소, 가래, 소화기증상(오심, 구토, 설사 등), 혼돈, 어지러움, 콧물이나 코막힘, 객혈, 흉통, 결막염, 피부 증상 등<br><br></div>
+
+			<br><br><b>치료</b><br>
+			<div id="inside_contents">
+			- <b>기본치료</b> : 특이치료제는 없으며 증상에 따른 해열제, 수액공급, 진해제 등 대증치료<br>
+			- <b>호흡곤란</b> : 호흡 곤란 시 산소 공급 + 필요한 경우, 기계호흡이나 체외막 산소공급 처치<br>
+			- <b>렘데시비르</b> : 산소 치료가 필요한 환자에서 렘데시비르의 효과가 일부 확인되어 국내외에 긴급 승인이 되었거나, 긴급 승인을 준비 중.<br>
+			- <b>항바이러스제</b> : 특이적인 항바이러스제 없음<br></div>
+
+
+			<br><br><b>치명률</b><br>
+			<div id="inside_contents">
+			전세계 치명률은 지역, 인구집단연령 구조, 감염 상태 및 기타 요인에 의해 0.1~25%로 다양함
+			전세계 치명률은 0.00%~1.63% (중위값 0.27%)로 보정 후 0.00~1.54%(중위값 0.23%)()()<br>
+			<a id="sub_a" href="https://www.who.int/bulletin/volumes/99/1/20-265892/en/">Bulletin of the World Health Organization. 2021</a><br><br></div>
+
+
+
+			<br><br><b>예방</b><br>
+			<div id="inside_contents">
+			식약처에서 승인된 코로나19 백신(향후 업데이트 예정)
+			- 올바른 손씻기
+			- 기침 예절 준수
+			- 씻지 않은 손으로 눈, 코, 입 만지지 않기
+			- 주위 환경을 자주 소독하고 환기하기<br><br></div>
+
+
+
+			<br><br><b>전파 경로</b><br>
+			<div id="inside_contents">
+			- 주된 전파경로는 감염자의 호흡기 침방울(비말)에 의한 전파<br>
+			- 사람 간에 전파되며, 대부분의 감염은 감염자가 기침, 재채기, 말하기, 노래 등을할 때 발생한 호흡기 침방울(비말)을 다른사람이 밀접접촉(주로 2m 이내)하여 발생<br>
+			- 현재까지 연구결과에 의하면, 비말 이외, 표면접촉*, 공기 등을 통해서도 전파가 가능하나, 공기전파는 의료기관의에어로졸 생성 시술**, 밀폐된공간에서 장시간 호흡기 비말을 만드는환경***등 특정 환경에서 제한적으로 전파되는 것으로 알려짐<br><br>
+			
+			* 감염된 사람과의 직접 접촉(악수 등) 또는 매개체(오염된 물품이나 표면)를 만진 후, 손을 씻기 전 눈, 코, 입 등을 만짐으로 바이러스 전파<br>
+
+			** 에어로졸 생성 시술: 기관지 내시경 검사, 객담 유도, 기관삽관, 심폐소생술, 개방된 객담 흡입, 흡입기 등<br>
+
+			*** 환기가 부적절하게 이루어진 노래방, 커피숍, 주점, 실내 운동시설 등에서 감염자와 같이있거나 감염자가 떠난 즉시 그 밀폐공간을 방문한 경우<br><br></div>
+
+
+			<br><br><b>잠복기</b><br>
+			<div id="inside_contents">
+			1~14일(평균 5~7일)<br><br></div>
+
+
+			<br><br><b>진단 기준</b><br>
+			<div id="inside_contents">
+			환자 : 임상양상에 관계없이 진단을 위한 검사기준에 따라 코로나19 감염이 확인된 자
+			진단을 위한 검사 기준
+			코로나19 유전자(PCR) 검출
+			바이러스 분리<br><br></div>
+		</div>
+		<br><hr>
+		<br><br><br><h3 style="text-align:center"><b> 병원생물학 정보</b></h3>
+		<br>
+		<div class=mid_box>
+			<br><h4 style="text-align:center"><b> 바이러스 분류 및 특성</b></h4>
+			<div id=inside_contents>
+				<b>개요</b><br>
+				코로나 바이러스(CoV)는 사람과 다양한 동물에 감염될 수 있는 바이러스로서 유전자 크기 27~32kb의 RNA 바이러스<br><hr>
+				
+				<br><b>분류</b><br>
+				코로나 바이러스과에는 4개의 속(알파, 베타, 감마, 델타)이 있음
+				알파 · 베타 : 사람과 동물에게 감염
+				감마 · 델타 : 동물에게 감염<br><hr>
+				
+				<br><b>형태</b><br>
+				형태는 코로나 바이러스의 명명과 같이 전자현미경 관찰시 구형
+				외부 spike 단백질이 특징적인 크라운형태<br><hr>
+				
+				<br><b>사람감염 코로나 바이러스</b><br>
+				사람감염 코로나 바이러스는 현재까지 6종류가 알려져 있음<br>
+				- 감기를 일으키는 유형(229E, OC43, NL63, HKU1)<br>
+				- 중증폐렴을 일으킬 수 있는 유형(SARS-CoV, MERS-CoV)<br>
+		  	</div>
+		</div>
+	</div>
+</div>
+<div id="footer"></div>
+</body> 
+</html>
+

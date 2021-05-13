@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="ko-KR">
+<head> 
+	<meta charset="utf-8"/> 
+	<meta name="description" content="Corona Information Site"/> 
+	<meta name="author" content="tlwns5598@gmail.com" /> 
+	<title>Corona Core</title> 
+	<link rel="stylesheet" href="../style.css">
+
+    <!-- Footer 부분 html 파일로 포함하기 위한 script-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">   
+        $(document).ready( function() {
+        $("#footer").load("../footer.html");
+        $("#header").load("../header.html");
+        });
+    </script>
+    <!-- 위치 : #footer 자리 -->
+    <!-- 내용 : "footer.html" 내용 -->
+
+	
+	<style> 
+    /*확진자 동선 링크 버튼*/
+    #btn_group button{ 
+        border: 1px solid black; 
+        background-color: rgba(0,0,0,0); 
+        color: black; 
+        margin-bottom : 10px;
+        padding: 20px; 
+        border-radius:10px;
+        
+    }
+
+    /*링크 hover*/
+    #btn_group button:hover{ 
+    color:white;
+    background-color:gray;
+    cursor: pointer;
+    }
+	</style>
+</head>
+<body id="zoom">
+	
+    <!-- 페이지 원클릭 상단이동 버튼-->
+    <a  style="display:scroll; position:fixed; left : 30px; bottom:10px;" href="#"><img src="../../02_이미지/up_dark.png" style="width:40px; "></a>
+
+	<a href="../index.html"style="text-decoration:none;color:black;">
+	<h2 class="main_title"> Corona Core </a></h2><br>
+<div class="mid">
+	<nav id="topMenu" > 
+		<ul> 
+			<li class="topMenuLi"> <a class="menuLink" >이용 안내</a> 
+				<ul class="submenu"> 
+					<li><a href="../submenu_1/01_notice.html" class="submenuLink">공지사항</a></li> 
+					<li><a href="../submenu_1/02_about_us.html" class="submenuLink">About Us</a></li> 
+				</ul>
+			</li> 
+			<li>|</li> <!-- 메뉴 사이에 그냥 바 모양 텍스트로 단락 구분한 거  -->
+			<li class="topMenuLi"> <a class="menuLink" >통계 정보</a> 
+				<ul class="submenu"> 
+					<li><a href="../submenu_2/graph1.html" class="submenuLink">국내 누적 확진자 통계</a></li> 
+					<li><a href="../submenu_2/graph2.html" class="submenuLink">지역별 확진자 증가 추세</a></li> 
+					<li><a href="../submenu_2/graph3.html" class="submenuLink">지역별 확진자 비교 통계</a></li> 
+					<li><a href="../submenu_2/graph4.html" class="submenuLink">특정 수치 초과일 조회</a></li>
+					<li><a href="../submenu_2/graph5.html" class="submenuLink">지역별 확진자 숫자 조회</a></li>
+				</ul> 
+			</li> 
+			<li>|</li>
+			<li class="topMenuLi"> <a class="menuLink" >방역 정보</a>
+				<ul class="submenu"> 
+					<li><a href="../submenu_3/01_corona19.html" class="submenuLink">코로나 19</a></li> 
+					<li><a href="../submenu_3/02_vaccine.html" class="submenuLink">코로나 백신</a></li> 
+					<li><a href="../submenu_3/03_person_movement.html" class="submenuLink">확진자 동선</a></li> <!--하이퍼링크 버튼, 지자체별-->
+					<li><a href="../submenu_3/04_prevention.html" class="submenuLink">예방 행동 수칙</a></li> <!--국민예방수칙, 긴급연락처(ex선별진료소, 관할보건소)-->
+				</ul> 
+			</li> 
+			<li>|</li> 
+			<li class="topMenuLi"> <a class="menuLink">정부 정책</a>
+				<ul class="submenu"> 
+					<li><a href="../submenu_4/01_policy.html" class="submenuLink">사회적 거리두기 정책</a></li> <!--단계별실행방안-->
+					<li><a href="../submenu_4/02_stage.html" class="submenuLink">지역별 거리두기 단계</a></li> 
+					<li><a href="../submenu_4/03_mask.html" class="submenuLink">마스크 착용 의무화 범위</a></li> 
+				</ul> 
+			</li> 
+		</ul> 
+	</nav>
+	<br><hr>
+    <!-- 경로 박스 -->
+    <div class="stage">
+    	<h3 style="text-align:left" class="font1"> 방역정보 > 확진자 동선</h3>
+	</div>
+    <hr>
+	<!-- 컨텐츠 박스 -->
+	<div class="contents">
+
+    	<br><h3 style="text-align:center"> 지자체별 확진자 동선 정보</h3><br>
+    	<hr>
+		<br>
+			<p>
+			지자체별 확진자 동선 정보를 제공합니다. <br>
+			각 링크를 클릭하면 해당 지자체 사이트에서 정보를 조회할 수 있습니다.<br><br>
+			</p>
+		<span style="text-align : center"> * 주의사항</span>
+		<br>
+		<p>
+		- 공개 기간이(14일) 경과되면 장소 등 공개내용을 삭제함<br>
+		- 확진환자의 거주지(읍면동 단위 이하) 및 성별, 연령, 직장명 등 개인정보는 공개하지 않음<br>
+		- 해당 공간 내 모든 접촉자가 파악된 경우 공개하지 않음<br>
+		</p><br>
+    	<hr>
+		<br>
+	    <div style="font-size:30px; padding-left:100px;">
+            <div id="btn_group" style="width:500px; text-align:center"> 
+                <button id="test_btn1" onclick="window.open('https://www.seoul.go.kr/coronaV/coronaStatus.do')">서울</button> 
+                <button id="test_btn2" onclick="window.open('https://www.busan.go.kr/covid19/Corona19/travelhist.do')">부산</button> 
+                <button id="test_btn3" onclick="window.open('http://covid19.daegu.go.kr/00937400.html')">대구</button> 
+                <button id="test_btn4" onclick="window.open('https://www.incheon.go.kr/health/HE020409')">인천</button> 
+                <button id="test_btn5" onclick="window.open('https://www.gwangju.go.kr/c19/contentsView.do?pageId=corona29')">광주</button> 
+                <button id="test_btn6" onclick="window.open('https://www.daejeon.go.kr/corona19/index.do?menuId=0002')">대전</button> 
+                <button id="test_btn7" onclick="window.open('https://www.ulsan.go.kr/u/health/contents.ulsan?mId=001002003000000000')">울산</button> 
+                <button id="test_btn8" onclick="window.open('https://www.sejong.go.kr/bbs/R3621/list.do')">세종</button> 
+                <button id="test_btn9" onclick="window.open('https://www.gg.go.kr/bbs/board.do?bsIdx=722&menuId=2903#page=1')">경기</button> 
+                <button id="test_btn10" onclick="window.open('https://www.provin.gangwon.kr/covid-19.html')">강원</button> 
+                <button id="test_btn11" onclick="window.open('http://www1.chungbuk.go.kr/covid-19/index.do')">충북</button> 
+                <button id="test_btn12" onclick="window.open('http://www.chungnam.go.kr/coronaStatus.do')">충남</button> 
+                <button id="test_btn13" onclick="window.open('https://www.jeonbuk.go.kr/index.jeonbuk?menuCd=DOM_000000110006000000')">전북</button> 
+                <button id="test_btn14" onclick="window.open('https://www.jeonnam.go.kr/coronaMainPage.do')">전남</button> 
+                <button id="test_btn15" onclick="window.open('https://gb.go.kr/corona_main.htm')">경북</button> 
+                <button id="test_btn16" onclick="window.open('http://xn--19-q81ii1knc140d892b.kr/main/main.do#close')">경남</button> 
+                <button id="test_btn17" onclick="window.open('https://www.jeju.go.kr/wel/healthCare/corona/coronaNotice.htm')">제주</button> 
+            </div>
+	  	</div>
+	</div>
+</div>
+<div id="footer"></div>
+</body> 
+</html>
+

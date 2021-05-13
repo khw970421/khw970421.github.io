@@ -1,0 +1,31 @@
+
+#outer_contents{
+	background-color:#eeeeee;
+	border:1px solid;
+	margin:10px;
+}
+.mid_box{
+	background-color:#3D3D3D;
+	border:1px solid;
+	margin:6px;
+	text-align:center;
+	color:white;
+}
+#inside_contents{
+	background-color:white;
+	border:1px solid;
+	margin:16px;
+	padding : 10px;
+	color:black;
+	text-align:left;
+	line-height: 1.5;
+}
+#graph_iframe{
+	background-color:white;
+	border:1px solid;
+}
+#sub_a{
+	font-size:15px;
+	text-decoration: none;
+	color:red;
+}

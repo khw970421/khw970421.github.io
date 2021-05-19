@@ -55,3 +55,9 @@
 1. web1.io -> choiwonseok9.github.io, khw970421.github.io에 영향을
 한번에 하나의 레퍼지토리로 바꾸기
 
+
+### 2020/05/19
+
+1. Set_Date 부분의 날짜만 데이터가 추가되면 end변수만 바꾸면 나머지 js파일들도 적용되게 변경
+2. 공유버튼 기능 추가
+3. 슬라이더로 Pi_Chart_Bar_Chart 수정완료 

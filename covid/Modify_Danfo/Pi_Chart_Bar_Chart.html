@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://cdn.jsdelivr.net/npm/danfojs@0.1.2/dist/index.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 </head>
 <body>
 <h1>원하는 날짜의 코로나 지역별 증가수 확인 (현재 2020년 03월 04일 부터 04월 30일까지만 가능</h1>
-<input type="date" id="input"><br>
-<button type="submit" id="plot">원 차트 입력 버튼</button>
-<button type="submit" id="bar">막대 차트 입력 버튼</button><br>
-<button type="submit" id="cancel_plot">원 차트 삭제 버튼</button>
-<button type="submit" id="cancel_bar">막대 차트 삭제 버튼</button>
 
-<div id="table"></div>
+<h2 id="div1" >
+</h2>
+<input id="range" type="range" style="width:50%">
+<button type="submit" id="cancel_plot">원 차트 삭제 버튼</button>
 <div id="plot_div"></div>
+<br>
+
+<h2 id="div2" >
+</h2>
+<input id="range2" type="range" style="width:50%">
+<button type="submit" id="cancel_bar">막대 차트 삭제 버튼</button>
 <div id="bar_div"></div>
 <button class="but">download</button>
 <script src="js/Pi_Chart_Bar_Chart.js" type="module">

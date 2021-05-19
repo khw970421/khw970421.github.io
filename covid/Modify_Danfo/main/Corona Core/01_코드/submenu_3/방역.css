@@ -10,15 +10,33 @@
 	margin:6px;
 	text-align:center;
 	color:white;
+	padding-bottom:15px;
+}
+.mid_box_title{
+	background-color:gray;
+	margin:0px;
+	margin-left:16px;
+	margin-right:16px;
+	margin-top:16px;
+
+	padding-bottom: 1px;
+	padding-top:1px;
+	text-align:center;
+	color:white;
+	font-size:15px;
+	line-height: 1;
 }
 #inside_contents{
 	background-color:white;
-	border:1px solid;
-	margin:16px;
-	padding : 10px;
+	margin:0px;
+	margin-left:16px;
+	margin-right:16px;
+	padding-left : 10px;
+	padding-right : 10px;
 	color:black;
 	text-align:left;
 	line-height: 1.5;
+	border:1px solid;
 }
 #graph_iframe{
 	background-color:white;

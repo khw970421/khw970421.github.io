@@ -1,11 +1,49 @@
+<!-- SNS 공유용 주소 연결 용 -->
+<script type="text/javascript" async> 
+	var url_default_ks = "https://story.kakao.com/share?url="; 
+	var url_default_fb = "https://www.facebook.com/sharer/sharer.php?u="; 
+	var url_default_tw_txt = "https://twitter.com/intent/tweet?text="; 
+	var url_default_tw_url = "&url="; 
+	var url_default_band = "http://band.us/plugin/share?body="; 
+	var url_route_band = "&route="; 
+	var url_default_naver = "http://share.naver.com/web/shareView.nhn?url="; 
+	var title_default_naver = "&title="; 
+	var url_this_page = location.href; 
+	var title_this_page = document.title; 
+	var url_combine_ks = url_default_ks + url_this_page; 
+	var url_combine_fb = url_default_fb + url_this_page; 
+	var url_combine_tw = url_default_tw_txt + document.title + url_default_tw_url + url_this_page; 
+	var url_combine_band = url_default_band + encodeURI(url_this_page)+ '%0A' + encodeURI(title_this_page)+'%0A' + '&route=tistory.com'; 
+	var url_combine_naver = url_default_naver + encodeURI(url_this_page) + title_default_naver + encodeURI(title_this_page); 
+</script>
 <div class="footer">
-    	<div class="footer_mid">
-	    	<div class="footer_inside">
-			<br><br><br> - 공유 - <br><br>
-	    	민간이 취합한 집계이므로 공식적인 근거 자료로 활용될 수 없으며<br>
-	    	본 사이트의 정보 사용에서 발생하는 문제의 책임은 전적으로 사용자에게 있습니다.<br><br>
-			corona.core.kr@gmail.com (가상)<br>
-			<br><br><br>
+	<div class="footer_mid">
+		<div class="footer_inside">
+			<br>
+			<br>
+			<br> - 주의 사항 - <br>
+			<br>
+			 민간이 취합한 집계이므로 공식적인 근거 자료로 활용될 수 없으며<br>
+			 본 사이트의 정보 사용에서 발생하는 문제의 책임은 전적으로 사용자에게 있습니다.<br>
+			<br>
+			 corona.core.kr@gmail.com (가상)<br><br>
+			<!-- SNS share buttons --> 
+			<div style="width: 100%; text-align: center; margin-bottom: 64px;"> 
+			<!-- Facebook share button --> 
+			<a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=600, height=600'); return false;">
+			<img src="https://imgur.com/2pxqHxt.png" title="페이스북으로 공유하기" class="sharebtn_custom" style="width: 48px;"></a> 
+			<!-- Twitter share button --> 
+			<a href="" onclick="window.open(url_combine_tw, '', 'scrollbars=no, width=600, height=600'); return false;">
+			<img src="https://imgur.com/z7V4qga.png" title="트위터로 공유하기" class="sharebtn_custom" style="width: 48px;"></a> 
+			<!-- Naver share button --> 
+			<a href="" onclick="window.open(url_combine_naver, '', 'scrollbars=no, width=600, height=600'); return false;">
+			<img src="https://imgur.com/AYqtESo.png" title="네이버로 공유하기" class="sharebtn_custom" style="width: 48px;"></a> 
+			<!-- Kakao story share button --> 
+			<a href="" onclick="window.open(url_combine_ks, '', 'scrollbars=no, width=600, height=600'); return false;">
+			<img src="https://imgur.com/mIW39pd.jpg" title="카카오스토리로 공유하기" class="sharebtn_custom" style="width: 48px;"></a>
+			</div>
+			<br>
 		</div>
 	</div>
-</div><br>
+</div>
+<br>

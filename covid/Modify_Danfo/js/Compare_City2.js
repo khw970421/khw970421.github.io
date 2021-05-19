@@ -1,4 +1,4 @@
-import {url} from './Data.js'
+import {url} from './utils/Data.js'
 const cityTag = document.getElementById('city')
 const addButton = document.getElementById('addButton');
 const cityTitle = document.querySelector('.cityMember');

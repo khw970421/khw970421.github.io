@@ -1,4 +1,4 @@
-import {url} from '../../Modify_Danfo/js/Data.js'
+import {url} from '../../Modify_Danfo/js/utils/Data.js'
 let input1 = document.getElementById('city1')
 let input2 = document.getElementById('city2')
 let button = document.getElementById('but');

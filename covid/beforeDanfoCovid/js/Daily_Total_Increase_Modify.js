@@ -1,4 +1,4 @@
-import {url} from '../../Modify_Danfo/js/Data.js'
+import {url} from '../../Modify_Danfo/js/utils/Data.js'
 async function load () {
   const get_date = [];
   const get_sum = [];

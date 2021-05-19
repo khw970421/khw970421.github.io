@@ -1,5 +1,5 @@
 import {url} from './utils/Data.js'
-import {end} from './utils/Set_date.js'
+import {end} from './utils/Set_Date.js'
 
 let input = document.getElementById('input')
 let Plot_Button = document.getElementById('plot');

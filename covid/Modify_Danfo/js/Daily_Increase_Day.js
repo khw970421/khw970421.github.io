@@ -42,7 +42,7 @@ function Set_Date(){
   let tDate = new Date('2020-03-03'); // 2020년 03월 04일 부터 시작
   let Year,Month,Day;                 // 각 날짜별 날짜 생성
   const date_array = [];              // 해당 필요부분 넣을 배열 생성
-  for(let i=0;i<119;i++)
+  for(let i=0;i<150;i++)
   {
     tDate.setDate(tDate.getDate()+1)        // 3월 4일 계산 후 하루씩 증가
     Year = tDate.getFullYear().toString().slice(2,4);       // 2020년이 아닌 뒤의 두자리 수만 필요하므로 slice 사용

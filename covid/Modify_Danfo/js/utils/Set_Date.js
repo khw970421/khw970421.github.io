@@ -1,7 +1,8 @@
+
 function Set_Date(){
   let sdt = new Date('2020-03-03'); // 2020년 03월 04일 부터 시작
   let edt = new Date('2020-07-31');
-  let dateDiff = Math.ceil((edt.getTime()-sdt.getTime())/(1000*3600*24))+1;
+  let dateDiff = Math.ceil((edt.getTime()-sdt.getTime())/(1000*3600*24));
 
   let Year,Month,Day;                 // 각 날짜별 날짜 생성
   const date_array = [];              // 해당 필요부분 넣을 배열 생성

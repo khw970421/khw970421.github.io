@@ -61,3 +61,21 @@
 1. Set_Date 부분의 날짜만 데이터가 추가되면 end변수만 바꾸면 나머지 js파일들도 적용되게 변경
 2. 공유버튼 기능 추가
 3. 슬라이더로 Pi_Chart_Bar_Chart 수정완료 
+
+### 2021/05/29
+1. index.html에 button 태그 추가 ( 위치는 막 잡음 기능구현 목적으로), scripts로 index.js 코드 연결
+2. index.js 파일 추가
+3. Modify_Danfo/js/utils/Set_Date.js 의 코드 fetch 코드 추가
+`fetch('https://coronaproject.herokuapp.com/api/covidDate').then(res=>res.json()).then(obj=>{end = obj.data})`
+
+버튼 사용방법
+1. 버튼 클릭
+2. 1234 비밀번호 누르고 엔터
+3. 날짜 입력 ex) 2020-05-31
+4. 해당 값이 서버로 요청되어 날짜 값 수정
+5. 그때 언급했던 3가지 통계관련 내용들이 해당 날짜가지만 가져온다. 
+ => 즉, 관리자가 버튼만 눌러서 날짜를 설정하면 
+ 통계는 해당 날짜까지만 가져올 수 있다. 
+ 
+ 주의 : 막 데이터보다 더 먼 날짜인 2021년 12월 31일 이렇게 설정하면 나머지 통계도 불러오기 할때 오류뜨니 관리자 부분은 주의
+ 

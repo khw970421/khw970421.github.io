@@ -1,5 +1,6 @@
 let start = '2020-03-03'
 let end = '2020-12-31'
+fetch('https://coronaproject.herokuapp.com/api/covidDate').then(res=>res.json()).then(obj=>{end = obj.data})
 
 function Set_Date(){
   let sdt = new Date(start); // 2020년 03월 04일 부터 시작

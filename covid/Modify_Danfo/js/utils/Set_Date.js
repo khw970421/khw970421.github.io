@@ -1,8 +1,11 @@
 let start = '2020-03-03'
 let end = '2020-12-31'
-fetch('https://coronaproject.herokuapp.com/api/covidDate').then(res=>res.json()).then(obj=>{end = obj.data})
-
-function Set_Date(){
+function B() {
+  return fetch('https://coronaproject.herokuapp.com/api/covidDate').then(res => res.json()).then(obj => {
+    return obj.data
+  })
+}
+function A(end){
   let sdt = new Date(start); // 2020년 03월 04일 부터 시작
   let edt = new Date(end);
   let dateDiff = Math.ceil((edt.getTime()-sdt.getTime())/(1000*3600*24));
@@ -18,6 +21,12 @@ function Set_Date(){
     date_array.push(Year+Month+Day);    //합친 내용을 배열로 만들어 준다.
   }
   return date_array;     //해당 배열을 반환한다.
+}
+
+async function Set_Date(){
+  let data = await B();
+  let date_array = await A(data);
+  return date_array;
 }
 
 export {Set_Date,end}

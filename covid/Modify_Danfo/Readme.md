@@ -79,3 +79,16 @@
  
  주의 : 막 데이터보다 더 먼 날짜인 2021년 12월 31일 이렇게 설정하면 나머지 통계도 불러오기 할때 오류뜨니 관리자 부분은 주의
  
+### 2021/05/30
+현재 분리된 진행상황
+
+https://khw970421.github.io/covid/Modify_Danfo/main/Corona%20Core/01_%EC%BD%94%EB%93%9C/index.html
+위의 url은 현재 관리자모드가 추가된 내용과 관련한 js코드가 수정된 내용으로 heroku를 사용하여
+Node.js의 express가 서버에서 돌아가 상황이다. 
+
+http://coronacore.site/main/CoronaCore/01_code/index.html
+or
+http://choiwonseok9.github.io/main/CoronaCore/01_code/index.html
+위의 url은 현재 관리자모드가 추가되지않았고 단지 end변수로 인해 데이터를 추가할 경우 
+end변수를 수정하면 해당 만큼 데이터가 통계관련 웹에서 처리된다. 
+

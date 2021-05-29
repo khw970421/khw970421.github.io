@@ -1,5 +1,5 @@
 import {url} from './utils/Data.js'
-import {end} from './utils/Set_Date.js'
+import {end,Set_Date} from './utils/Set_Date.js'
 
 let input = document.getElementById('input')
 let Plot_Button = document.getElementById('plot');
@@ -64,12 +64,18 @@ Cancel_Bar_Button.addEventListener('click',function(){
 })
 
 
+const datas = await Set_Date().then(values=>values.map(date => {
+    return dfd.read_csv(`${url}${date}.csv`)
+  }
+)).then(data=>Promise.all(data));
+let endDate = datas[datas.length-1].body__items__item__createDt.data[0].slice(0,10);
+
 document.querySelector('#range').setAttribute('min',1583247600);
-document.querySelector('#range').setAttribute('max',new Date(end).getTime() / 1000);
+document.querySelector('#range').setAttribute('max',new Date(endDate).getTime() / 1000);
 document.querySelector('#range').setAttribute('step',86400);
 
 document.querySelector('#range2').setAttribute('min',1583247600);
-document.querySelector('#range2').setAttribute('max',new Date(end).getTime() / 1000);
+document.querySelector('#range2').setAttribute('max',new Date(endDate).getTime() / 1000);
 document.querySelector('#range2').setAttribute('step',86400);
 
 $(document).ready(function() {

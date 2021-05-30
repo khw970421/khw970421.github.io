@@ -1,5 +1,5 @@
 import {url} from './utils/Data.js'
-import {end,Set_Date} from './utils/Set_Date.js'
+import {Set_Date} from './utils/Set_Date.js'
 
 let input = document.getElementById('input')
 let Plot_Button = document.getElementById('plot');
@@ -64,10 +64,10 @@ Cancel_Bar_Button.addEventListener('click',function(){
 })
 
 
-const datas = await Set_Date().then(values=>values.map(date => {
-    return dfd.read_csv(`${url}${date}.csv`)
-  }
-)).then(data=>Promise.all(data));
+const datas = await Set_Date()
+  .then(values=>values.map(date =>dfd.read_csv(`${url}${date}.csv`)))
+  .then(data=>Promise.all(data));
+
 let endDate = datas[datas.length-1].body__items__item__createDt.data[0].slice(0,10);
 
 document.querySelector('#range').setAttribute('min',1583247600);

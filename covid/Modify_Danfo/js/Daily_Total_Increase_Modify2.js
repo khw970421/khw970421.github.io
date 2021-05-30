@@ -79,10 +79,9 @@ async function load () {
   const get_date = [];
   const get_sum = [];
 
-  const datas = await Set_Date().then(values=>values.map(date => {
-      return dfd.read_csv(`${url}${date}.csv`)
-    }
-  )).then(data=>Promise.all(data));
+  const datas = await Set_Date()
+    .then(values=>values.map(date =>dfd.read_csv(`${url}${date}.csv`)))
+    .then(data=>Promise.all(data));
 
   datas.forEach(data => {
     get_sum.push(data.body__items__item__incDec.data[data.body__items__item__incDec.data.length - 1]);

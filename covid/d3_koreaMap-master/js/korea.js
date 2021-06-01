@@ -113,6 +113,7 @@ function drawMap(target) {
                     })
 
                     service = df.Price.data;
+                    let isGunyeok = service.length == 18 ? 1 : 0;
 
                     let j = document.getElementById('label-Jeju-do')
                     let gn = document.getElementById('label-Gyeongsangnam-do')
@@ -133,71 +134,70 @@ function drawMap(target) {
                     let  su= document.getElementById('label-Seoul')
 
                     j.addEventListener('mouseover',function(){
-                        j.setAttribute('title',service[0]);
-
+                        j.setAttribute('title',service[0+isGunyeok]);
                     });
                     gn.addEventListener('mouseover',function(){
-                        gn.setAttribute('title',service[1]);
+                        gn.setAttribute('title',service[1+isGunyeok]);
 
                     });
                     gb.addEventListener('mouseover',function(){
-                        gb.setAttribute('title',service[2]);
+                        gb.setAttribute('title',service[2+isGunyeok]);
 
                     });
                     jb.addEventListener('mouseover',function(){
-                        jb.setAttribute('title',service[3]);
+                        jb.setAttribute('title',service[3+isGunyeok]);
 
                     });
                     jn.addEventListener('mouseover',function(){
-                        jn.setAttribute('title',service[4]);
+                        jn.setAttribute('title',service[4+isGunyeok]);
 
                     });
                     cb.addEventListener('mouseover',function(){
-                        cb.setAttribute('title',service[5]);
+                        cb.setAttribute('title',service[5+isGunyeok]);
 
                     });
                     cn.addEventListener('mouseover',function(){
-                        cn.setAttribute('title',service[6]);
+                        cn.setAttribute('title',service[6+isGunyeok]);
 
                     });
                     gw.addEventListener('mouseover',function(){
-                        gw.setAttribute('title',service[7]);
+                        gw.setAttribute('title',service[7+isGunyeok]);
 
                     });
                     gg.addEventListener('mouseover',function(){
-                        gg.setAttribute('title',service[8]);
+                        gg.setAttribute('title',service[8+isGunyeok]);
 
                     });
                     sj.addEventListener('mouseover',function(){
-                        sj.setAttribute('title',service[9]);
+                        sj.setAttribute('title',service[9+isGunyeok]);
 
                     });
                     us.addEventListener('mouseover',function(){
-                        us.setAttribute('title',service[10]);
+                        us.setAttribute('title',service[10+isGunyeok]);
 
                     });
                     dj.addEventListener('mouseover',function(){
 
-                        dj.setAttribute('title',service[11]);
+                        dj.setAttribute('title',service[11+isGunyeok]);
                     });
                     gj.addEventListener('mouseover',function(){
 
-                        gj.setAttribute('title',service[12]);
+                        gj.setAttribute('title',service[12+isGunyeok]);
                     });
                     ic.addEventListener('mouseover',function(){
-                        ic.setAttribute('title',service[13]);
+                        ic.setAttribute('title',service[13+isGunyeok]);
 
                     });
                     dg.addEventListener('mouseover',function(){
-                        dg.setAttribute('title',service[14]);
+                        dg.setAttribute('title',service[14+isGunyeok]);
 
                     });
                     bs.addEventListener('mouseover',function(){
-                        bs.setAttribute('title',service[15]);
+                        bs.setAttribute('title',service[15+isGunyeok]);
 
                     });
                     su.addEventListener('mouseover',function(){
-                        su.setAttribute('title',service[16]);
+                        su.setAttribute('title',service[16+isGunyeok]);
 
                     });
                 }

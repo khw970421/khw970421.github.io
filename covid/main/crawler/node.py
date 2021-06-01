@@ -111,7 +111,7 @@ Jeju = data6[16].find('span',{'class':'name'}).text
 Jeju_num =  data6[16].find('span',{'class':'num'}).text
 
 print(Gyeongbuk,Gyeongbuk_num)
-#data1 = soup.find('div',{'class':'datalist'})   
+#data1 = soup.find('div',{'class':'datalist'})
 #data2 = data1.findAll('li')
 #fine_dust = data2[0].find('span',{'class':'data'}).text
 #print("일일 국내 코로나 발생자",fine_dust)
@@ -128,35 +128,35 @@ print(Gyeongbuk,Gyeongbuk_num)
 #wr.writerow([2,str(ultra_fine_dust)])
 #f.close()
 
-file = open('crawler/korea_corona.html', 'w')    # 일일 코로나 확진자
+file = open('./korea_corona.html', 'w')    # 일일 코로나 확진자
 file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">'+'+'+str(fine_dust)+'</p></h1>'+'</div>')      # 파일에 문자열 저장
 file.close()
 
-file = open('crawler/world_corona.html', 'w')    # 해외 유입 확진자
+file = open('./world_corona.html', 'w')    # 해외 유입 확진자
 file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">'+'+'+str(ultra_fine_dust)+'</p></h1>'+'</div>')
 file.close()
 
-file = open('crawler/mini_corona.html', 'w')    # 누적확진자
+file = open('./mini_corona.html', 'w')    # 누적확진자
 file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255)">'+str(result[0])+','+str(result[1])+'(+ '+str(result2[0])+')'+'</p></h2>'+'</div>')
 file.close()
 
-file = open('crawler/dead_corona.html', 'w')    # 사망자
+file = open('./dead_corona.html', 'w')    # 사망자
 file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">'+str(dead)+str(dead_today)+'</p></h1>'+'</div>')
 file.close()
 
-file = open('crawler/tit.html', 'w')    # 격리해제
+file = open('./tit.html', 'w')    # 격리해제
 file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255)">'+str(tit)+str(tit2)+'</p></h2>'+'</div>')
 file.close()
 
-file = open('crawler/tit2.html', 'w')    # 치료중
+file = open('./tit2.html', 'w')    # 치료중
 file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255)">'+str(tit3)+str(tit4)+'</p></h2>'+'</div>')
 file.close()
 
-file = open('crawler/date2.html', 'w', encoding="UTF-8")    # 업데이트 날짜
+file = open('./date2.html', 'w', encoding="UTF-8")    # 업데이트 날짜
 file.write('<div class="daydata">'+'<h4>'+'<p style ="color:rgb(0, 0, 0)">'+'Update : '+str(today.strftime("%Y/%m/%d %H:%M:%S"))+'</p></h4>'+'</div>')
 file.close()
 
-file = open('crawler/stage.html', 'w', encoding="UTF-8")    # 업데이트 날짜
+file = open('./stage.html', 'w', encoding="UTF-8")    # 업데이트 날짜
 file.write('<div class="daydata">'+'<h4>'+'<p style ="color:rgb(0, 0, 0)">'
 
 +str(Seoul)+' : '+str(Seoul_num)+'단계<br>'

@@ -102,6 +102,7 @@ function drawMap(target) {
     let service;
 
     Plot_Button.addEventListener('click',function(){
+      console.log(input.value.replace(/-/gi,'').slice(2,8))
         dfd.read_csv(`https://khw970421.github.io/covid/Modify_Danfo/Data/Date/${input.value.replace(/-/gi,'').slice(2,8)}.csv`)
             .then(
                 function(data) {

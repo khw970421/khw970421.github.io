@@ -1,5 +1,5 @@
 let start = '2020-03-03'
-let end = '2020-12-31'
+let end = '2021-06-01'
 function requestApiAndGetData() {
   return fetch('https://coronaproject.herokuapp.com/api/covidDate').then(res => res.json()).then(obj => {
     return obj.data

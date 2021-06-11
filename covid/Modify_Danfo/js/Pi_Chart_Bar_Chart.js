@@ -1,9 +1,5 @@
 import {url} from './utils/Data.js'
-import {Set_Date} from './utils/Set_Date.js'
 
-let input = document.getElementById('input')
-let Plot_Button = document.getElementById('plot');
-let Bar_Button = document.getElementById('bar');
 let Cancel_Plot_Button = document.getElementById('cancel_plot');
 let Cancel_Bar_Button = document.getElementById('cancel_bar');
 
@@ -63,20 +59,27 @@ Cancel_Bar_Button.addEventListener('click',function(){
     document.getElementById('bar_div').childNodes[0].remove();
 })
 
+document.querySelector('#submitBtn').addEventListener('click',()=>{
+  let start = document.querySelector('#startDate').value;
+  let end = document.querySelector('#endDate').value;
+  if(new Date(start) - new Date(end) >= 0 ){
+    alert('시작날짜가 종료날짜보다 느립니다.')
+  }
+  else if(new Date(end)=='Invalid Date' || new Date(end)=='Invalid Date'){
+    alert('날짜를 제대로 입력하지 않았습니다.')
+  }
+  else {
+    document.querySelector('#range').setAttribute('min', new Date(start).getTime() / 1000);
+    document.querySelector('#range').setAttribute('max', new Date(end).getTime() / 1000);
+    document.querySelector('#range').setAttribute('step', 86400);
 
-const datas = await Set_Date()
-  .then(values=>values.map(date =>dfd.read_csv(`${url}${date}.csv`)))
-  .then(data=>Promise.all(data));
+    document.querySelector('#range2').setAttribute('min', new Date(start).getTime() / 1000);
+    document.querySelector('#range2').setAttribute('max', new Date(end).getTime() / 1000);
+    document.querySelector('#range2').setAttribute('step', 86400);
+    alert('날짜 범위 수정 적용')
+  }
+})
 
-let endDate = datas[datas.length-1].body__items__item__createDt.data[0].slice(0,10);
-
-document.querySelector('#range').setAttribute('min',1583247600);
-document.querySelector('#range').setAttribute('max',new Date(endDate).getTime() / 1000);
-document.querySelector('#range').setAttribute('step',86400);
-
-document.querySelector('#range2').setAttribute('min',1583247600);
-document.querySelector('#range2').setAttribute('max',new Date(endDate).getTime() / 1000);
-document.querySelector('#range2').setAttribute('step',86400);
 
 $(document).ready(function() {
   $('#range').change(function(){

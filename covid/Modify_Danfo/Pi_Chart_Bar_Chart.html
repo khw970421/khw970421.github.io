@@ -8,12 +8,20 @@
     <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 </head>
 <body>
-<h1>원하는 날짜의 코로나 지역별 증가수 확인 (현재 2020년 03월 04일 부터 04월 30일까지만 가능</h1>
+<h1>원하는 날짜의 코로나 지역별 증가수 확인 </h1>
+
+<p> ● 시작 날짜 입력</p>
+<input type="date" id="startDate"><br>
+<p> ● 종료 날짜 입력</p>
+<input type="date" id="endDate">
+<br>
+<br>
+<button type="submit" id="submitBtn"> 날짜 설정 버튼</button>
 
 <h2 id="div1" >
 </h2>
 <input id="range" type="range" style="width:50%">
-<button type="submit" id="cancel_plot">원 차트 삭제 버튼</button>
+<button type="submit" id="cancel_plot"> 원 차트 삭제 버튼</button>
 <div id="plot_div"></div>
 <br>
 

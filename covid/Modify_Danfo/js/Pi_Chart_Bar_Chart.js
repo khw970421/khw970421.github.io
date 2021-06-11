@@ -117,7 +117,7 @@ $(document).ready(function() {
     var val = $(this).val();
     let result =(Unix_timestamp(val));
     document.querySelector('#div2').innerHTML= result;
-    dfd.read_csv(`https://khw970421.github.io/covid/Modify_Danfo/Data/Date/${result.replace(/-/gi, '').slice(2, 8)}.csv`)
+    dfd.read_csv(`${url}${result.replace(/-/gi, '').slice(2, 8)}.csv`)
       .then(
         function (data) {
           const incDec_Length_Except_Sum = data.body__items__item__incDec.data.length - 1;

@@ -15,10 +15,9 @@ async function load (value) {
   const get_date = [];
   const get_sum = [];
   try {
-    const datas = await Set_Date()
-      .then(values=>values.map(date => dfd.read_csv(`${url}${date}.csv`)))
-      .then(data=>Promise.all(data));
-
+    const datas = await Promise.all(Set_Date().map(date =>
+      dfd.read_csv(`${url}${date}.csv`)
+    ));
     datas.forEach(data => {
       get_sum.push(data.body__items__item__incDec.data[data.body__items__item__incDec.data.length - 1]);
       get_date.push(data.body__items__item__createDt.data[0].slice(2, 10));
